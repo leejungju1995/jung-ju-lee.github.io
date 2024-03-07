@@ -1,2 +1,3 @@
 # jung-ju-lee.github.io
-$ git remote add origin git@github.com:jung-ju-lee.github.io/my_first_github_pages.git
+
+<https://leejungju1995.github.io/jung-ju-lee.github.io/portfolio>
