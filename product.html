@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품</title>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/jquery-migrate.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/magic.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./javascript/slick.js"></script>
+    <script src="./javascript/nike.js" defer type="text/javascript"></script>
+    <link href="./css/reactive.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main_header">
+        <div class="header_menu_box">
+            <div class="header_menu_left_box">
+                <a href="index.html">
+                    <img src="./imgs/nike_1.png" alt="nike">
+                </a>
+            </div>
+            <div class="header_menu_right_box">
+                <div class="nike_logo_box">
+                    <a href="index.html">
+                        <img src="./imgs/nike_logo_1.png" alt="nike_logo">
+                    </a>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_navi">
+                        <li><a href="product.html" data-src="men">Men</a></li>
+                        <li><a href="product.html" data-src="women">Women</a></li>
+                        <li><a href="product.html" data-src="kids">Kids</a></li>
+                        <li><a href="product.html" data-src="best">Best</a></li>
+                    </ul>
+                </nav>
+                <div class="header_login_box">
+                    <a href="login.html"><img src="./imgs/login.png"></a>
+                    <a href="#"><img src="./imgs/shop.png"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="product_menu_header_box">
+            <div class="product_title_box">
+                <h2>NIKE </h2>
+            </div>
+            <div class="product_menu_box">
+                <nav class="product_menu">
+                    <ul class="product_navi">
+                        <li><a href="#" data-value="shoes">신발</a></li>
+                        <li><a href="#" data-value="clothing">의류</a></li>
+                        <li><a href="#" data-value="goods">용품</a></li>
+                        <li><a href="#" data-value="sale">SALE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="product_search_box">
+                <input type="text" placeholder="검색">
+                <img src="./imgs/search.png" alt="search">
+                <h3 class="searchReset">검색 초기화</h3>
+            </div>
+            <div class="product_filter_toggle_box">
+                <div class="product_filter_toggle">
+                    <h3>필터 표시</h3><img src="./imgs/filter.png" alt="필터">
+                    <!-- <h3 class="filterReset">필터 초기화</h3> -->
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="product_box">
+                <div class="product_filter_box">
+                    <div class="shoes">
+                        <nav class="product_filter_menu">
+                            <ul class="product_filter_navi">
+                                <li><a href="#" data-value="life">라이프스타일</a></li>
+                                <li><a href="#" data-value="jordan">조던</a></li>
+                                <li><a href="#" data-value="basket">농구</a></li>
+                                <li><a href="#" data-value="soccer">축구</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clothing">
+                        <nav class="product_filter_menu">
+                            <ul class="product_filter_navi">
+                                <li><a href="#" data-value="tshirt">탑 & 티셔츠</a></li>
+                                <li><a href="#" data-value="hoodie">후디 & 크루</a></li>
+                                <li><a href="#" data-value="jacket">재킷 & 베스트</a></li>
+                                <li><a href="#" data-value="pants">팬츠 & 타이츠</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="goods">
+                        <nav class="product_filter_menu">
+                            <ul class="product_filter_navi">
+                                <li><a href="#" data-value="bag">가방</a></li>
+                                <li><a href="#" data-value="ball">공</a></li>
+                                <li><a href="#" data-value="gloves">장갑</a></li>
+                                <li><a href="#" data-value="hat">모자 & 헤드밴드</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sale">
+                        <nav class="product_filter_menu">
+                            <ul class="product_filter_navi">
+                                <li><a href="#" data-value="saleshoes">SALE-신발</a></li>
+                                <li><a href="#" data-value="salehoodie">SALE-후디 & 크루</a></li>
+                                <li><a href="#" data-value="salepants">SALE-팬츠 & 타이츠</a></li>
+                                <li><a href="#" data-value="salejacket">SALE-재킷 & 베스트</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="product_list_box">
+                    <div class="product_item_box shoes life men best">
+                        <a href="detail.html">
+                        <img src="./imgs/life1.webp" data-src="./imgs/life1_2.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 에어 포스 1'07</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life men">
+                        <a href="detail.html">
+                        <img src="./imgs/life2.webp" data-src="./imgs/life2_2.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 덩크 로우 SE</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life men best">
+                        <a href="detail.html">
+                        <img src="./imgs/life3.webp" data-src="./imgs/life3_2.webp">
+                        <h4 class="itemTitle">나이키 에어 포스 1 미드 '07</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life men">
+                        <a href="detail.html">
+                        <img src="./imgs/life4.webp">
+                        <h4 class="itemTitle">나이키 x sacai 블레이저 로우</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life men">
+                        <a href="detail.html">
+                        <img src="./imgs/life5.webp">
+                        <h4 class="itemTitle">나이키 버로우</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">69,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life men">
+                        <a href="detail.html">
+                        <img src="./imgs/life6.webp">
+                        <h4 class="itemTitle">나이키 ACG 로우케이트</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">129,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men best">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan1.webp">
+                        <h4 class="itemTitle">조던 누 레트로 1로우</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">129,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan2.webp">
+                        <h4 class="itemTitle">에어 조던 XXXVII 테이텀 PF</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">239,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan3.webp">
+                        <h4 class="itemTitle">에어 조던 1 미드 SE 크래프트</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men best">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan4.webp">
+                        <h4 class="itemTitle">에어 조던 1 줌 Cmft</h4>
+                        <h4 class="itemKinds">신발</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">169,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan5.webp">
+                        <h4 class="itemTitle">에어 조던 XXXVII PF</h4>
+                        <h4 class="itemKinds">남성 농구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">219,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan men">
+                        <a href="detail.html">
+                        <img src="./imgs/jordan6.webp">
+                        <h4 class="itemTitle">에어 조던 7 레트로 SE</h4>
+                        <h4 class="itemKinds">남성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">249,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men">
+                        <a href="detail.html">
+                        <img src="./imgs/basket1.webp">
+                        <h4 class="itemTitle">르브론 XX EP</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">239,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men">
+                        <a href="detail.html">
+                        <img src="./imgs/basket2.webp">
+                        <h4 class="itemTitle">르브론 19 로우</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">189,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men">
+                        <a href="detail.html">
+                        <img src="./imgs/basket3.webp">
+                        <h4 class="itemTitle">자이언 2 PF</h4>
+                        <h4 class="itemKinds">남성 농구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men best">
+                        <a href="detail.html">
+                        <img src="./imgs/basket4.webp">
+                        <h4 class="itemTitle">르브론 19</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">239,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men best">
+                        <a href="detail.html">
+                        <img src="./imgs/basket5.webp">
+                        <h4 class="itemTitle">자이언 2 PF</h4>
+                        <h4 class="itemKinds">남성 농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket men">
+                        <a href="detail.html">
+                        <img src="./imgs/basket6.webp">
+                        <h4 class="itemTitle">르브론 위트니스 6(팀)</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">119,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men best">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer1.webp">
+                        <h4 class="itemTitle">나이키 티엠포 레전드 9 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">269,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer2.webp">
+                        <h4 class="itemTitle">나이키 줌 머큐리얼 슈퍼플라이 9 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">329,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer3.webp">
+                        <h4 class="itemTitle">나이키 팬텀 GT2 엘리트 다이내믹 핏 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">309,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men best">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer4.jpg">
+                        <h4 class="itemTitle">나이키 줌 머큐리얼 슈퍼플라이 9 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">329,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer5.webp">
+                        <h4 class="itemTitle">나이키 줌 머큐리얼 베이퍼 15 엘리트 AG-프로</h4>
+                        <h4 class="itemKinds">인공 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">289,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer men">
+                        <a href="detail.html">
+                        <img src="./imgs/soccer6.webp">
+                        <h4 class="itemTitle">나이키 티엠포 레전드 9 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">269,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt men">
+                        <a href="detail.html">
+                        <img src="./imgs/tshirt1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">남성 긴팔 맥스90 티</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">55,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt men">
+                        <a href="detail.html">
+                        <img src="./imgs/tshirt2.webp">
+                        <h4 class="itemTitle">대한민국 스우시</h4>
+                        <h4 class="itemKinds">남성 나이키 티셔츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">39,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt men best">
+                        <a href="detail.html">
+                        <img src="./imgs/tshirt3.webp">
+                        <h4 class="itemTitle">나이키 ACG 드라이 핏 UV "데버스테이션 트레일"</h4>
+                        <h4 class="itemKinds">남성 탑</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt men">
+                        <a href="detail.html">
+                        <img src="./imgs/tshirt4.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽</h4>
+                        <h4 class="itemKinds">남성 프렌치 테리 크루</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">69,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie men">
+                        <a href="detail.html">
+                        <img src="./imgs/hoodie1.webp">
+                        <h4 class="itemTitle">대한민국</h4>
+                        <h4 class="itemKinds">남성 하프집 후디</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie men best">
+                        <a href="detail.html">
+                        <img src="./imgs/hoodie2.webp">
+                        <h4 class="itemTitle">나이키 솔로 스우시</h4>
+                        <h4 class="itemKinds">남성 플리스 후디</h4>
+                        <h4 class="itemColor">7개 색상</h4>
+                        <h4 class="itemPrice">109,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie men">
+                        <a href="detail.html">
+                        <img src="./imgs/hoodie3.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키코드</h4>
+                        <h4 class="itemKinds">남성 플리스 테니스 후디</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">99,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie men">
+                        <a href="detail.html">
+                        <img src="./imgs/hoodie4.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 ACG 써마 핏</h4>
+                        <h4 class="itemKinds">남성 플리스 풀오버 후디</h4>
+                        <h4 class="itemColor">5개 색상</h4>
+                        <h4 class="itemPrice">135,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket men">
+                        <a href="detail.html">
+                        <img src="./imgs/jacket1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 써마 핏 리펫</h4>
+                        <h4 class="itemKinds">남성 합성 필 러닝 재킷</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket men">
+                        <a href="detail.html">
+                        <img src="./imgs/jacket2.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 솔로 스우시</h4>
+                        <h4 class="itemKinds">남성 트랙 재킷</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">179,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket men">
+                        <a href="detail.html">
+                        <img src="./imgs/jacket3.webp">
+                        <h4 class="newItem">친황경 소재</h4>
+                        <h4 class="itemTitle">대한민국 AWF</h4>
+                        <h4 class="itemKinds">남성 풀집 축구 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">129,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket men best">
+                        <a href="detail.html">
+                        <img src="./imgs/jacket4.webp">
+                        <h4 class="itemTitle">나이키 스포르웨어 스우시</h4>
+                        <h4 class="itemKinds">남성 풀집 리버서블 재킷</h4>
+                        <h4 class="itemColor">6개 색상</h4>
+                        <h4 class="itemPrice">129,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants men">
+                        <a href="detail.html">
+                        <img src="./imgs/pants1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">조던 에센셜</h4>
+                        <h4 class="itemKinds">남성 스테이트먼트 플리스 팬츠</h4>
+                        <h4 class="itemColor">5개 색상</h4>
+                        <h4 class="itemPrice">105,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants men best">
+                        <a href="detail.html">
+                        <img src="./imgs/pants2.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">조던 에센셜</h4>
+                        <h4 class="itemKinds">남성 플리스 팬츠</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">85,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants men">
+                        <a href="detail.html">
+                        <img src="./imgs/pants3.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 프로 플렉스 벤트 맥스</h4>
+                        <h4 class="itemKinds">남성 겨울용 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants men">
+                        <a href="detail.html">
+                        <img src="./imgs/pants4.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">남성 언라인드 커프스 팬츠</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">79,000 원</h4>
+                        </a>
+                    </div>
+                    
+                    <div class="product_item_box sale saleshoes men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale1.webp">
+                        <h4 class="itemTitle">나이키 버로우</h4>
+                        <h4 class="itemKinds">남성 슬리퍼</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">55,200 원 <span>69,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale2.webp">
+                        <h4 class="itemTitle">나이키 버로우 SE</h4>
+                        <h4 class="itemKinds">남성 슬리퍼</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">55,200 원 <span>69,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes men best">
+                        <a href="detail.html">
+                        <img src="./imgs/sale3.webp">
+                        <h4 class="itemTitle">에어 조던 6 레트로</h4>
+                        <h4 class="itemKinds">신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">155,300 원 <span>239,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie men best">
+                        <a href="detail.html">
+                        <img src="./imgs/sale4.webp">
+                        <h4 class="itemTitle">나이키 클럽+</h4>
+                        <h4 class="itemKinds">남성 플리스 윈터라이즈드 크루</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">71,200 원 <span>89,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale5.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">크루</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">55,200 원 <span>69,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale6.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">남성 프렌치 테리 크루</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">95,200 원 <span>119,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants men best">
+                        <a href="detail.html">
+                        <img src="./imgs/sale7.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">남성 카고 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">55,200 원 <span>69,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale8.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 프로 써마 핏</h4>
+                        <h4 class="itemKinds">남성 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">84,200 원 <span>105,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale9.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 써마 핏</h4>
+                        <h4 class="itemKinds">남성용 테이퍼드 스우시 그래픽 피트니스 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">55,300 원 <span>79,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket men best">
+                        <a href="detail.html">
+                        <img src="./imgs/sale10.webp">
+                        <h4 class="itemTitle">나이키 라이프</h4>
+                        <h4 class="itemKinds">남성 언라인드 초어 코드</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">131,700 원 <span>155,000 원</span></h4>
+                        <h4 class="itemSale">15% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale11.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 윈드러너</h4>
+                        <h4 class="itemKinds">남성 언라인드 우븐 아노락</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">67,700 원 <span>95,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket men">
+                        <a href="detail.html">
+                        <img src="./imgs/sale12.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">남성 우븐 언라인드 아노락</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">83,800 원 <span>129,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenlife1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 에어 포스 1 '07</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life women best">
+                        <a href="detail.html">
+                        <img src="./imgs/womenlife2.webp">
+                        <h4 class="itemTitle">나이키 덩크 로우 SE</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenjordan1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">에어 조던 1 미드</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan women best">
+                        <a href="detail.html">
+                        <img src="./imgs/womenjordan2.webp">
+                        <h4 class="itemTitle">에어 조던 1 엘리베이트 미드</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">169,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenbasket1.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 코스믹 유니티 2</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">179,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket women best">
+                        <a href="detail.html">
+                        <img src="./imgs/womenbasket2.webp">
+                        <h4 class="itemTitle">PG 6 EP</h4>
+                        <h4 class="itemKinds">농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">129,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensoccer1.webp">
+                        <h4 class="itemTitle">나이키 티엠포 레전드 9 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">269,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensoccer2.webp">
+                        <h4 class="itemTitle">나이키 팬텀 GT2 엘리트 FG</h4>
+                        <h4 class="itemKinds">천연 잔디 클리트 축구화</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">289,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt women best">
+                        <a href="detail.html">
+                        <img src="./imgs/womentshirt1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 피닉스 플리스</h4>
+                        <h4 class="itemKinds">여성 3/4 슬리브 크롭 폴로 스웻셔츠</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">89,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt women">
+                        <a href="detail.html">
+                        <img src="./imgs/womentshirt2.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 피닉스 플리스</h4>
+                        <h4 class="itemKinds">여성 오버-오버사이즈 크루넥 스웻셔츠</h4>
+                        <h4 class="itemColor">6개 색상</h4>
+                        <h4 class="itemPrice">89,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenhoodie1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 피닉스 플리스</h4>
+                        <h4 class="itemKinds">여성 오버-오버사이즈 풀오버 후디</h4>
+                        <h4 class="itemColor">6개 색상</h4>
+                        <h4 class="itemPrice">99,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenhoodie2.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 피닉스 플리스</h4>
+                        <h4 class="itemKinds">여성 오버-오버사이즈 풀오버 후디</h4>
+                        <h4 class="itemColor">9개 색상</h4>
+                        <h4 class="itemPrice">89,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenjacket1.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 스포츠웨어 써마 핏 시티 시리즈</h4>
+                        <h4 class="itemKinds">여성 합성 필 샤인 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">279,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenjacket2.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 스포츠웨어 써마 핏 리펠</h4>
+                        <h4 class="itemKinds">여성 리버서블 재킷</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">189,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants women best">
+                        <a href="detail.html">
+                        <img src="./imgs/womenpants1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">여성 미드라이즈 조거</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">75,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants women">
+                        <a href="detail.html">
+                        <img src="./imgs/womenpants2.webp">
+                        <h4 class="newItem">For Members</h4>
+                        <h4 class="itemTitle">나이키 써마</h4>
+                        <h4 class="itemKinds">여성 트레이닝 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">75,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidslife1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">에어 조던 1 로우 SE</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidslife2.webp">
+                        <h4 class="itemTitle">나이키 포스 1 LV8</h4>
+                        <h4 class="itemKinds">베이비 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">59,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes life kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidslife3.webp">
+                        <h4 class="itemTitle">나이키 코트 버로우 로우 2</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">59,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjordan1.webp">
+                        <h4 class="itemTitle">에어 조던 1 로우</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">119,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjordan2.webp">
+                        <h4 class="itemTitle">조던 1 로우 알트</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">69,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes jordan kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjordan3.webp">
+                        <h4 class="itemTitle">에어 조던 1 미드 SE</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsbasket1.webp">
+                        <h4 class="itemTitle">에어 조던 XXXVII</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">169,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsbasket2.webp">
+                        <h4 class="itemTitle">루카 1</h4>
+                        <h4 class="itemKinds">주니어 농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">99,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes basket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsbasket3.webp">
+                        <h4 class="itemTitle">르브론 위트니스7</h4>
+                        <h4 class="itemKinds">주니어 농구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">109,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssoccer1.webp">
+                        <h4 class="itemTitle">나이키 주니어 티엠포 레전드 9 클럽 TF</h4>
+                        <h4 class="itemKinds">리틀키즈/주니어 인조 잔디 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">49,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssoccer2.webp">
+                        <h4 class="itemTitle">나이키 주니어 티엠포 레전드 9 아카데미 TF</h4>
+                        <h4 class="itemKinds">리틀키즈/주니어 인조 잔디 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">69,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box shoes soccer kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssoccer3.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 주니어 티엠포 레전드 9 아카데미 TF</h4>
+                        <h4 class="itemKinds">리틀키즈/주니어 인조 잔디 축구화</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">69,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidstshirt1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">주니어(여아) 크루 스웻셔츠</h4>
+                        <h4 class="itemColor">6개 색상</h4>
+                        <h4 class="itemPrice">49,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidstshirt2.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 아이콘 플리스</h4>
+                        <h4 class="itemKinds">주니어 오버사이즈 스웻셔츠</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">75,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing tshirt kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidstshirt3.webp">
+                        <h4 class="itemTitle">나이키 에어</h4>
+                        <h4 class="itemKinds">주니어(여아) 프렌츠 테리 크롭 후디</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">85,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidshoodie1.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 ACG 써마 핏</h4>
+                        <h4 class="itemKinds">주니어 풀집 재킷</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">119,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidshoodie2.webp">
+                        <h4 class="newItem">신상품</h4>
+                        <h4 class="itemTitle">나이키 ACG 아이콘 플리스</h4>
+                        <h4 class="itemKinds">주니어 오버사이즈 후디</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">105,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing hoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidshoodie3.webp">
+                        <h4 class="itemTitle">나이키 애슬레틱스 리펠</h4>
+                        <h4 class="itemKinds">주니어(남아) 하프집 트레이닝 후디</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">85,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjacket1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 합성 필 후드 파카</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjacket2.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 합성 필 후드 파카</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">139,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing jacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidsjacket3.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 인조 퍼 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">159,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidspants1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">주니어 팬츠</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">45,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidspants2.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 스포츠웨어 아이콘 플리스</h4>
+                        <h4 class="itemKinds">주니어 루즈 조거</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">59,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box clothing pants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidspants3.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽</h4>
+                        <h4 class="itemKinds">주니어(남아) 프렌치 테리 팬츠</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">45,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale1.webp">
+                        <h4 class="itemTitle">나이키 에어맥스 97</h4>
+                        <h4 class="itemKinds">주니어 신발</h4>
+                        <h4 class="itemColor">6개 색상</h4>
+                        <h4 class="itemPrice">122,800 원 <span>189,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale2.webp">
+                        <h4 class="itemTitle">나이키 덩크 로우</h4>
+                        <h4 class="itemKinds">베이비 신발</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">52,000 원 <span>65,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale3.webp">
+                        <h4 class="newItem">For Members</h4>
+                        <h4 class="itemTitle">나이키 우드사이드 2 하이 ACG</h4>
+                        <h4 class="itemKinds">주니어 부츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">90,300 원 <span>129,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale4.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어(여아) 긴팔 탑</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">52,500 원 <span>75,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale5.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어(여아) 긴팔 크롭 탑</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">39,200 원 <span>49,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale6.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어(남아) 긴팔 티셔츠</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">31,500 원 <span>45,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale7.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 인조 퍼 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">111,300 원 <span>159,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale8.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 합성 필 후드 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">83,300 원 <span>119,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale9.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">주니어 합성 필 후드 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">83,300 원 <span>119,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale10.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 프로</h4>
+                        <h4 class="itemKinds">주니어(여아) 레깅스</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">31,500 원 <span>45,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale11.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 페이버릿</h4>
+                        <h4 class="itemKinds">주니어(여아) 스우시 레깅스</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">20,300 원 <span>29,000 원</span></h4>
+                        <h4 class="itemSale">30% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants kids">
+                        <a href="detail.html">
+                        <img src="./imgs/kidssale12.webp">
+                        <h4 class="itemTitle">나이키 드라이 핏</h4>
+                        <h4 class="itemKinds">주니어(남아) 우브 트레이닝 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">39,200 원 <span>49,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale1.webp">
+                        <h4 class="itemTitle">나이키 에어 포스 1 PLT.AF.ORM</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">134,100 원 <span>149,000 원</span></h4>
+                        <h4 class="itemSale">10% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale2.webp">
+                        <h4 class="itemTitle">나이키 TC 7900</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">125,100 원 <span>139,000 원</span></h4>
+                        <h4 class="itemSale">10% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale saleshoes women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale3.webp">
+                        <h4 class="itemTitle">나이키 데이브레이크</h4>
+                        <h4 class="itemKinds">여성 신발</h4>
+                        <h4 class="itemColor">5개 색상</h4>
+                        <h4 class="itemPrice">107,100 원 <span>119,000 원</span></h4>
+                        <h4 class="itemSale">10% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale4.webp">
+                        <h4 class="itemTitle">나이키 드라이 핏 겟 핏</h4>
+                        <h4 class="itemKinds">여성 그래픽 풀집 트레이닝 후디</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">80,100 원 <span>89,000 원</span></h4>
+                        <h4 class="itemSale">10% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale5.webp">
+                        <h4 class="itemTitle">나이키 에어</h4>
+                        <h4 class="itemKinds">여성 플리스 크루 스웻셔츠</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">79,200 원 <span>99,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salehoodie women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale6.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 클럽 플리스</h4>
+                        <h4 class="itemKinds">여성 오버사이즈 크롭 그래픽 후디</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">63,200 원 <span>79,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale7.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 써마 핏 시티 시리즈</h4>
+                        <h4 class="itemKinds">여성 600 필 파워 다운 재킷</h4>
+                        <h4 class="itemColor">3개 색상</h4>
+                        <h4 class="itemPrice">254,100 원 <span>299,000 원</span></h4>
+                        <h4 class="itemSale">15% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale8.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 플러시</h4>
+                        <h4 class="itemKinds">여성 프린트 인조 퍼 재킷</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">175,200 원 <span>219,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salejacket women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale9.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 써마 핏 시티 시리즈</h4>
+                        <h4 class="itemKinds">여성 600 필 파워 다운 재킷</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">323,100 원 <span>359,000 원</span></h4>
+                        <h4 class="itemSale">10% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale10.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 에센셜</h4>
+                        <h4 class="itemKinds">여성 7/8 미드라이즈 레깅스</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">25,300 원 <span>39,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale11.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어 에센셜</h4>
+                        <h4 class="itemKinds">여성 하이웨이스트 레깅스</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">31,800 원 <span>49,000 원</span></h4>
+                        <h4 class="itemSale">35% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box sale salepants women">
+                        <a href="detail.html">
+                        <img src="./imgs/womensale12.webp">
+                        <h4 class="itemTitle">나이키 드라이 핏 블리스 빅토리</h4>
+                        <h4 class="itemKinds">여성 미드라이즈 트레이닝 팬츠</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">63,200 원 <span>79,000 원</span></h4>
+                        <h4 class="itemSale">20% 할인</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods bag men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/bag1.webp">
+                        <h4 class="itemTitle">나이키</h4>
+                        <h4 class="itemKinds">슈박스 백(12L)</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">45,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods bag men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/bag2.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 브라질리아 9.5</h4>
+                        <h4 class="itemKinds">트레이닝 더블백(스몰, 41L)</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">45,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods bag men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/bag3.webp">
+                        <h4 class="itemTitle">나이키 ACG 36</h4>
+                        <h4 class="itemKinds">백팩(44L)</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">285,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods bag men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/bag4.webp">
+                        <h4 class="itemTitle">나이키 헤이워드</h4>
+                        <h4 class="itemKinds">백팩(26L)</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">75,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods ball men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/ball1.webp">
+                        <h4 class="itemTitle">나이키 피치 트레이닝</h4>
+                        <h4 class="itemKinds">축구공</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">29,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods ball men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/ball2.webp">
+                        <h4 class="itemTitle">나이키 머큐리얼 페이드</h4>
+                        <h4 class="itemKinds">축구공</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">25,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods gloves men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/gloves1.webp">
+                        <h4 class="itemTitle">나이키 써마 핏 아카데미</h4>
+                        <h4 class="itemKinds">축구 글러브</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">39,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods gloves men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/gloves2.webp">
+                        <h4 class="itemTitle">나이키 골키퍼 매치</h4>
+                        <h4 class="itemKinds">축구 글러브</h4>
+                        <h4 class="itemColor">2개 색상</h4>
+                        <h4 class="itemPrice">39,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods hat men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/hat1.webp">
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">비니</h4>
+                        <h4 class="itemColor">1개 색상</h4>
+                        <h4 class="itemPrice">33,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="product_item_box goods hat men women kids best">
+                        <a href="detail.html">
+                        <img src="./imgs/hat2.webp">
+                        <h4 class="newItem">친환경 소재</h4>
+                        <h4 class="itemTitle">나이키 스포츠웨어</h4>
+                        <h4 class="itemKinds">피셔맨 비니</h4>
+                        <h4 class="itemColor">4개 색상</h4>
+                        <h4 class="itemPrice">33,000 원</h4>
+                        </a>
+                    </div>
+                    <div class="searchNone_box">
+                        <h2>검색 결과가 없습니다.</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="bt_box">
+            <div>
+                <div class="bt_top_box">
+                    <div class="bt_top_text_box">
+                        <ul class="bt_menu">
+                            <li>
+                                <a href="#">새로운 소식</a>
+                                <ul class="bt_submenu first">
+                                    <li><a href="#">멤버가입</a></li>
+                                    <li><a href="#">매장안내</a></li>
+                                    <li><a href="#">나이키 저널</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">도움말</a>
+                                <ul class="bt_submenu">
+                                    <li><a href="#">로그인 안내</a></li>
+                                    <li><a href="#">주문배송조회</a></li>
+                                    <li><a href="#">반품 정책</a></li>
+                                    <li><a href="#">결제 방법</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">문의하기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT NIKE</a>
+                                <ul class="bt_submenu">
+                                    <li><a href="#">소식</a></li>
+                                    <li><a href="#">채용</a></li>
+                                    <li><a href="#">투자자</a></li>
+                                    <li><a href="#">지속가능성</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bt_icon_box">
+                        <div class="bt_icon_item">
+                            <img src="./imgs/twitter_icon.png">
+                        </div>
+                        <div class="bt_icon_item">
+                            <img src="./imgs/facebook_icon.png">
+                        </div>
+                        <div class="bt_icon_item">
+                            <img src="./imgs/youtube_icon.png">
+                        </div>
+                        <div class="bt_icon_item">
+                            <img src="./imgs/instagram_icon.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="bt_bottom_box">
+                    <div class="bt_bottom_up_box">
+                        <img src="./imgs/address_icon.png">
+                        <p>대한민국 <span>© 2023 Nike, Inc. All Rights Reserved</span></p>
+                        <div class="bt_agree_box">
+                            <p><span class="bt_agree">이용약관</span></p>
+                            <p>개인정보처리방침</p>
+                        </div>
+                    </div>
+                    <div class="bt_bottom_down_box">
+                        <div class="bt_bottom_down_left_box">
+                            <p>(유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스 | 서울 강남구 테헤란로 152 강남파이낸스센터 30층 | 통신판매업신고번호 2011-서울강남-03461 | 등록번호 220-88-09068사업자 정보 확인
+                                고객센터 전화 문의 080-022-0182 FAX 02-6744-5880 | 이메일 service@nike.co.kr | 호스팅서비스사업자 (유)나이키코리아</p>
+                        </div>
+                        <div class="bt_bottom_down_right_box">
+                            <p>
+                                현금 등으로 결제 시 안전 거래를 위해 나이키 쇼핑몰에서 가입하신 한국결제네트웍스 유한회사의 구매안전 서비스(결제대금예치)를 이용하실 수 있습니다.
+                                콘텐츠산업진흥법에 의한 콘텐츠 보호 안내자세히 보기
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
