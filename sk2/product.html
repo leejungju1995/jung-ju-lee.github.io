@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품</title>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/jquery-migrate.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./javascript/slick.js"></script>
+    <script src="./javascript/sk.js" defer type="text/javascript"></script>
+    <link href="./css/reactive.css" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="product_top_box">
+                top
+            </div>
+            <form action="#" method="post">
+            <div class="product_box">
+                <div class="product_text_box">
+                    <h2 class="product_title">SK-II제품</h2>
+                    <!-- <p>피부  기적을  선사하는  SK-II 대표적 인  성분,  PITERA™를  고스란히  담은  베스트셀러  세트로  맑고  투영한  피부를 경험해  보세요.  PITERA™가  피부  본연의  리듬을  되살리는데  도움을  주어,  피부를  눈에  띄게  매끈하고  탄력  있고  환하고 어려보이게  가꾸어줍니다..  오늘  SK-II 베스트셀러  스킨 케어  에센셜을  만나보세요!</p> -->
+                </div>
+                <div class="product_search_box">
+                    <p>제품 라인</p>
+                    <select>
+                        <option value="#" selected>피부문제</option>
+                        <option value=""></option>
+                    </select>
+                    <select class="product_kinds">
+                        <option value="#" selected>제품 종류</option>
+                        <option value="essence">에센스</option>
+                        <option value="toner">토너</option>
+                        <option value="moisture">모이스처라이저</option>
+                        <option value="serum">세럼</option>
+                        <option value="mask">마스크</option>
+                        <option value="cleanser">클린저</option>
+                        <option value="eyes">아이 케어</option>
+                        <option value="sunblock">자외선 차단제</option>
+                        <option value="kit">키트</option>
+                    </select>
+                    <select>
+                        <option value="#" selected>제품 라인</option>
+                        <option value=""></option>
+
+                    </select>
+                    <div class="product_search_icon_box">
+                        <img src="./imgs/search.png" alt="search" class="product_search_icon">
+                    </div>
+                    <input type="text" id="product_search" name="product_search">
+                    <button type="button" class="product_search_button">검색</button>
+                    <button type="reset" class="product_reset">필터 재설정</button>
+                </div>
+                <div class="product_list_box">
+                    <div class="product_item_box essence">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product1.webp" alt="product1">
+                            </a>
+                        </div>
+                        <p>피테라&#8482;에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box kit">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product2.webp" alt="product2">
+                            </a>
+                        </div>
+                        <p>PITERA&#8482;첫 만남 키트</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box kit">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product3.webp" alt="product3">
+                            </a>
+                        </div>
+                        <p>PITERA&#8482;풀라인 세트</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product4.webp" alt="product4">
+                            </a>
+                        </div>
+                        <p>제놉틱스 오라 에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product5.webp" alt="product5">
+                            </a>
+                        </div>
+                        <p>제놉틱스 스팟 에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box moisture">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product6.webp" alt="product6">
+                            </a>
+                        </div>
+                        <p><span>NEW</span>스킨파워 에어리크림</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box moisture">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product7.webp" alt="product7">
+                            </a>
+                        </div>
+                        <p><span>NEW</span>스킨파워 크림</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product8.webp" alt="product8">
+                            </a>
+                        </div>
+                        <p><span>NEW</span>스킨파워 에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box eyes">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product9.webp" alt="product9">
+                            </a>
+                        </div>
+                        <p><span>NEW</span>스킨파워 아이크림</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box mask">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product10.webp" alt="product10">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 마스크</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box cleanser">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product11.webp" alt="product11">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 클렌저</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box toner">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product12.webp" alt="product12">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 클리어 로션</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box cleanser">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product13.webp" alt="product13">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 클렌징 오일</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product14.webp" alt="product14">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 오일</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box sunblock">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product15.webp" alt="product15">
+                            </a>
+                        </div>
+                        <p>애트모스피어 에리 라이트 UV 에멀젼 SPF 30 PA&#43;&#43;&#43;</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box sunblock">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product16.webp" alt="product16">
+                            </a>
+                        </div>
+                        <p>애트모스피어 CC크림 SPF 50 PA&#43;&#43;&#43;</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product17.webp" alt="product17">
+                            </a>
+                        </div>
+                        <p>미드데이 미라클 에센트</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box mask">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product18.webp" alt="product18">
+                            </a>
+                        </div>
+                        <p>SK-II화이트닝 소스 덤 리바이벌 마스크</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box moisture">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product19.webp" alt="product19">
+                            </a>
+                        </div>
+                        <p>LXP 얼티미트퍼펙트크림</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product20.webp" alt="product20">
+                            </a>
+                        </div>
+                        <p>LXP 얼티미트 퍼페팅 에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product21.webp" alt="product21">
+                            </a>
+                        </div>
+                        <p>LXP 얼티미트 퍼페팅 세럼</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box eyes">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product22.webp" alt="product22">
+                            </a>
+                        </div>
+                        <p>LXP 얼티미트 퍼페팅 아이 크림</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box essence">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product23.webp" alt="product23">
+                            </a>
+                        </div>
+                        <p>맨페이셜 트리트먼트 에센스</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box cleanser">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product24.webp" alt="product24">
+                            </a>
+                        </div>
+                        <p>맨 모이스처라이징 클렌저</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box serum">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product25.webp" alt="product25">
+                            </a>
+                        </div>
+                        <p>페이셜 트리트먼트 리페어C</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box mask">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product26.webp" alt="product26">
+                            </a>
+                        </div>
+                        <p>스킨 시그니처 3D리디파이닝 마스크</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                    <div class="product_item_box moisture">
+                        <div class="product_back_box">
+                            <a href="#">
+                                <img src="./imgs/product27.webp" alt="product27">
+                            </a>
+                        </div>
+                        <p>페이셜 리프트 에멀젼</p>
+                        <div class="buy_button">
+                            <a href="#">지금 구매하기<span>></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

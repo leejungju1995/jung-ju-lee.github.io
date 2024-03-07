@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=border-left: 1px solid #d0d0d0;, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/jquery-migrate.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./javascript/slick.js"></script>
+    <script src="./javascript/sk.js" defer type="text/javascript"></script>
+    <link href="./css/reactive.css" rel="stylesheet">
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="join_box">
+                <div class="join_logo_box">
+                    <img src="./imgs/logo.svg" alt="logo">
+                </div>
+                <form action="login.html" method="post" autocomplete="on" onsubmit="return joinFnc()">
+                    <div class="join_view_box">
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="user_id">아이디</label>
+                            </h3>
+                            <div class="join_input_box">
+                                <input class="join_input" id="user_id" name="user_id" type="text" required value="">
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="user_pw">비밀번호</label>
+                            </h3>
+                            <div class="join_input_box">
+                                <input class="join_input" id="user_pw" name="user_pw" type="password" required value="">
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="user_pw_check">비밀번호 재확인</label>
+                            </h3>
+                            <div class="join_input_box">
+                                <input class="join_input" id="user_pw_check" name="user_pw_check" type="password" required value="">
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="user_name">이름</label>
+                            </h3>
+                            <div class="join_input_box">
+                                <input class="join_input" id="user_name" name="user_name" type="text" required value="">
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="birth">생년월일</label>
+                            </h3>
+                            <div class="birth_box">
+                                <div class="birth_input_box">
+                                    <input type="text" name="birth" id="birth_y" required placeholder="년(4자)">
+                                </div>
+                                <div class="birth_input_box">
+                                    <select name="birth" id="birth_m" required>
+                                        <option value="#" selected>월</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div>
+                                <div class="birth_input_box">
+                                    <input type="text" name="birth" id="birth_d" required placeholder="일">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="gender">성별</label>
+                            </h3>
+                            <div class="join_gender_box">
+                                <select name="gender" id="gender">
+                                    <option>성별</option>
+                                    <option>남자</option>
+                                    <option>여자</option>
+                                    <option>선택 안함</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="user_email">본인 확인 메일<span>(선택)</span></label>
+                            </h3>
+                            <div class="join_input_box">
+                                <input class="join_input" id="user_email" name="user_email" type="email" placeholder="선택입력">
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <h3>
+                                <label for="phone">휴대전화</label>
+                            </h3>
+                            <div class="phone_box" >
+                                <select name="phone" id="phone">
+                                    <option>가나+234</option>
+                                    <option>그리스 +30</option>
+                                    <option>네팔 + 977</option>
+                                    <option selected>대한민국 +82</option>
+                                </select>
+                            </div>
+                            <div class="phone_box">
+                                <div class="phone_num">
+                                    <input type="tel" id="phone_num" name="phone" required placeholder="전화번호 입력">
+                                    <button type="button" id="phone_push_button">인증번호 받기</button>
+                                </div>
+                            </div>
+                            <div class="phone_box">
+                                <input type="text" id="phone_check" name="phone" placeholder="인증번호를 입력하세요." disabled>
+                            </div>
+                        </div>
+                        <div class="join_view_sec_box">
+                            <div class="join_agree_box">
+                                <label for="join_agree">약관동의</label>
+                                <input type="checkbox" id="join_agree" name="join_agree">약관에 동의합니다.
+                            </div>
+                            
+                        </div>
+                        <div class="join_button">
+                            <button type="button" id="join_button">가입하기</button>
+                        </div>                        
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
