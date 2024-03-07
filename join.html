@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./javascript/jquery.min.js"></script>
+    <script src="./javascript/jquery-migrate.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
+    <link href="./css/magic.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./javascript/slick.js"></script>
+    <script src="./javascript/nike.js" defer type="text/javascript"></script>
+    <link href="./css/reactive.css" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <div class="join_box">
+                <div class="join_logo">
+                    <h2>JOIN US</h2>
+                </div>
+                <form action="#" method="post" autocomplete="on" onsubmit="return joinFnc()">
+                <div class="join_information_box">
+                    <h2>회원정보</h2>
+                    
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_id">아이디<span> * </span></label>
+                        </div>
+                        <div class="join_input_box">
+                            <input id="join_id" name="join_id" type="text" required>
+                        </div>
+                    </div>
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_pw">비밀번호<span> * </span></label>
+                        </div>
+                        <div class="join_input_box">
+                            <input id="join_pw" name="join_pw" type="password" required>
+                        </div>
+                    </div>
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_pw_check">비밀번호 확인<span> * </span></label>
+                        </div>
+                        <div class="join_input_box">
+                            <input id="join_pw_check" name="join_pw_check" type="password" required>
+                        </div>
+                    </div>
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_name">이름<span> * </span></label>
+                        </div>
+                        <div class="join_input_box">
+                            <input id="join_name" name="join_name" type="text" required>
+                        </div>
+                    </div>
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_phone">휴대폰번호<span> * </span></label>
+                        </div>
+                        <div class="join_input_box">
+                            <select>
+                                <option selected>010</option>
+                                <option>011</option>
+                            </select>
+                            <span>-</span>
+                            <input id="join_phone_1" name="join_phone" type="tel" required>
+                            <span>-</span>
+                            <input id="join_phone_2" name="join_phone" type="tel" required>
+                        </div>
+                    </div>
+                    <div class="join_info_box">
+                        <div class="join_text_box">
+                            <label for="join_address">주소<span> * </span></label>
+                        </div>
+                        <div class="join_address_input_box">
+                            <input id="join_address" name="join_address" type="text" required>
+                            <button type="button" class="join_address_button">주소검색</button>
+                        </div>
+                        <div class="join_address_input_box">    
+                            <input id="join_detail_address" name="join_address" type="text" required placeholder="상세주소입력">
+                        </div>
+                    </div>
+                </div>
+                <div class="join_agree_box">
+                    <div class="join_all_agree_box">
+                        <input class="join_agree all" type="checkbox"><p>나이키의 이용약관, 개인정보 수집 및 이용동의, 이벤트 및 프로모션 안내메일 수신(선택)에 모두 동의합니다.</p>
+                    </div>
+                    <div class="join_agree_list_box">
+                        <div>
+                            <input class="join_agree required" type="checkbox" required><p>NIKE 사이트 이용약관 <span>(필수)</span></p><p>자세히보기</p>
+                        </div>
+                        <div>
+                            <input class="join_agree required" type="checkbox" required><p>개인정보 수집 및 이용동의 <span>(필수)</span></p><p>자세히보기</p>
+                        </div>
+                        <div>
+                            <input class="join_agree" type="checkbox"><p>이벤트 및 프로모션 알림 메일 수신(선택)</p><p>자세히보기</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="join_button_box">
+                    <a href="login.html">
+                        <button type="button">돌아가기</button>
+                    </a>
+                    <button type="button" id="join_button">가입하기</button>
+                </div>
+                <div id="join_modal">
+                    <div class="join_modal_up">
+                        <div class="join_modal_text">
+                            <div>
+                                <input class="join_address_input" type="text" placeholder='"주소입력"'>
+                                <button class="join_address_search_button" type="button">검색</button>
+                            </div>
+                            <div class="join_address_textarea"></div>
+                        </div>
+                    </div>
+                    <div class="join_modal_back">뒤로</div>
+                </div>
+            </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
