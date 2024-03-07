@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+@media screen and (max-width : 1620px) {
+    
+}
+
+@media screen and (max-width : 1400px) {
+    .intro_circle{
+        animation-duration: 6s;
+    }
+    .web_box{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .web_box > h2{
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+    .web_monitor{
+        width: 100%;
+    }
+    .web_text{
+        width: 100%;
+        margin-top: 0;
+    }
+    .web_button a{
+        width: 162px;
+    }
+    .about_flip_box{
+        height: 1100px;
+    }
+    .skill_box{
+        top: 10%;
+    }
+    .skill_described{
+        bottom: 50%;
+    }
+    .skill_box div div{
+        margin: 40px 20px;
+    }
+    .hover_box{
+        top: 70px;
+    }
+    .next_work{
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .profile_img{
+        width: 80%;
+        top: 5%;
+        left: 50%;
+        margin-left: -40%;
+    }
+    .profile_text{
+        width: 80%;
+        left: 50%;
+        top: 81vw;
+        margin-left: -40%;
+    }
+    .skill_box{
+        top: 10%;
+        margin-top: 0;
+    }
+    .skill_box div div{
+        width: 34%;
+        height: 34%;
+        margin : 40px 20px;
+    }
+    .skill_described{
+        bottom: 30%;
+    }
+    .skill_described p{
+        padding-left: 0;
+    }
+    .hover_box{
+        top: 110px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    /* .skill_box{
+        top: 0%;
+    }
+    .skill_box div div{
+        width: 20%;
+        height: 20%;
+        margin : 40px 0px;
+    } */
+}
